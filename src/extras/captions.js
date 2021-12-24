@@ -1,0 +1,25 @@
+const Captions = [
+  "Jay and Lover",
+  "A cute photo of jay in the sun",
+  "Jay and some gurl",
+  "Flippin eggz bitch",
+  "Flowers AF",
+  "Jay's proud dad watching his son play Rugby",
+  "Jet's fan 👎",
+  "Is charley crying?",
+  "Hardest picture of the softest boys",
+  "Documentation of a sunday by Jonah",
+  "'Gross, veggies'",
+  "Lily wasn't supposed to be in this",
+  "Aight p cute",
+  "Two noodles, one beer",
+  "Is his head backwards or the backpack in front",
+  "____ Yacht",
+  "My turn i made the site",
+  "My turn again",
+  "Sports",
+  "My turn, last time",
+  "'Murica",
+];
+
+export default Captions;

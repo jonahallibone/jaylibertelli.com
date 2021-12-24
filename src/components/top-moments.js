@@ -1,13 +1,14 @@
 import {
   AspectRatio,
   Center,
-  chakra,
   GridItem,
   Heading,
   SimpleGrid,
+  Text,
   VStack,
 } from "@chakra-ui/react";
 import Image from "next/image";
+import Captions from "extras/captions";
 
 const momentArr = Array(21).fill("");
 
@@ -41,11 +42,23 @@ const Moment = ({ index }) => {
   const isEven = index % 2 === 0;
 
   return (
-    <SimpleGrid columns={[1, 2, 2]} width="100%">
-      <GridItem order={isEven ? 0 : 1}>
+    <SimpleGrid columns={[1, 2, 2]} width="100%" my={8}>
+      <GridItem order={[1, isEven ? 0 : 1]}>
         <MomentImage index={index} />
       </GridItem>
-      <GridItem></GridItem>
+      <GridItem my={4}>
+        <Center h="100%">
+          <Text
+            fontSize="4xl"
+            fontWeight="bold"
+            bgGradient="linear(to-l, #7928CA, #FF0080)"
+            bgClip="text"
+            lineHeight="1.2"
+          >
+            {Captions[index]}{" "}
+          </Text>
+        </Center>
+      </GridItem>
     </SimpleGrid>
   );
 };
@@ -53,12 +66,15 @@ const Moment = ({ index }) => {
 const TopMoments = () => {
   return (
     <>
-      <Center my={4}>
-        <Heading as="h2" size="lg" fontWeight="bold" mb={4}>
+      <Center my={16} flexDirection="column">
+        <Heading as="h2" size="lg" fontWeight="bold">
           Jay&apos;s Top Moments of 2021
         </Heading>
+        <Heading as="h3" size="md" fontWeight="light" color="gray.500" my={4}>
+          Featuring his friends, lovers, and Jonah
+        </Heading>
       </Center>
-      <VStack columns={[1, 2, 2]}>
+      <VStack spacing={[8]}>
         {momentArr.map((_, i) => (
           <Moment index={i} key={i} />
         ))}
