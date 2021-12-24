@@ -15,7 +15,7 @@ const Hero = () => {
     <SimpleGrid columns={[1, 1, 2]} my={8}>
       <GridItem>
         <VStack justifyContent="center" alignItems="flex-start" h="100%">
-          <Text>HEY THERE 👋 I'M</Text>
+          <Text>HEY THERE 👋 I&apos;M</Text>
           <Box my={8}>
             <Heading
               size="2xl"
