@@ -3,6 +3,7 @@ import Head from "next/head";
 import Header from "components/header";
 import Hero from "components/hero";
 import TopMoments from "components/top-moments";
+import Footer from "components/footer";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
           name="description"
           content="The home of the Noodle Jay Libertelli"
         />
+        <meta name="robots" content="noindex" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
@@ -20,6 +22,8 @@ export default function Home() {
         <Hero />
         <Divider />
         <TopMoments />
+        <Divider my={8} />
+        <Footer />
       </Container>
     </Box>
   );
