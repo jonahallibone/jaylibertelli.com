@@ -14,8 +14,15 @@ import Link from "next/link";
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
+  const getBorderStyle = () => {
+    if (colorMode === "dark") {
+      return "1px solid rgba(255,255,255,0.16)";
+    }
+    return "1px solid black";
+  };
+
   return (
-    <Box as="header" py={4} borderBottom="1px solid black">
+    <Box as="header" py={4} borderBottom={getBorderStyle()}>
       <Container maxW="7xl">
         <SimpleGrid columns={[2]}>
           <GridItem>
