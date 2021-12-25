@@ -26,7 +26,7 @@ const Header = () => {
             </HStack>
           </GridItem>
           <GridItem>
-            <HStack as="nav" justifyContent="end">
+            <HStack as="nav" justifyContent="flex-end">
               <Link href="/">Home</Link>
               <IconButton
                 variant="outline"
