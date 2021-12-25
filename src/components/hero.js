@@ -44,7 +44,7 @@ const Hero = () => {
             >
               Lily Ling
             </TextLink>
-            , and general nice person.
+            , and generally a nice person.
           </Text>
         </VStack>
       </GridItem>
