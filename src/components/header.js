@@ -19,9 +19,11 @@ const Header = () => {
       <Container maxW="7xl">
         <SimpleGrid columns={[2]}>
           <GridItem>
-            <Text fontSize="lg" fontWeight="bold">
-              <Link href="/">Jay Libertelli</Link>
-            </Text>
+            <HStack h="100%">
+              <Text fontSize="lg" fontWeight="bold">
+                <Link href="/">Jay Libertelli</Link>
+              </Text>
+            </HStack>
           </GridItem>
           <GridItem>
             <HStack as="nav" justifyContent="end">
